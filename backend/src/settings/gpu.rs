@@ -219,8 +219,8 @@ impl SettingsRange for Gpu {
             fast_ppt: Some(30000000),
             slow_ppt: Some(29000000),
             clock_limits: Some(MinMax {
-                min: 1600,
-                max: 1600,
+                min: 1800,
+                max: 1800,
             }),
             slow_memory: false,
             state: crate::state::Gpu::default(),
