@@ -221,8 +221,8 @@ impl SettingsRange for Cpu {
         Self {
             online: true,
             clock_limits: Some(MinMax {
-                max: 3500,
-                min: 3500,
+                max: 3800,
+                min: 3800,
             }),
             governor: "schedutil".to_owned(),
             index: usize::MAX,
