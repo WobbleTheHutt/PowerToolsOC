@@ -393,7 +393,7 @@ const Content: VFC<{ serverAPI: ServerAPI }> = ({}) => {
           onChange={(value: boolean) => {
             if (value) {
               set_value(CLOCK_MIN_GPU, 200);
-              set_value(CLOCK_MAX_GPU, 1600);
+              set_value(CLOCK_MAX_GPU, 1800);
               reloadGUI("GPUFreqToggle");
             } else {
               set_value(CLOCK_MIN_GPU, null);
@@ -409,7 +409,7 @@ const Content: VFC<{ serverAPI: ServerAPI }> = ({}) => {
         { get_value(CLOCK_MIN_GPU) != null && <SliderField
           label="Minimum (MHz)"
           value={get_value(CLOCK_MIN_GPU)}
-          max={1600}
+          max={1800}
           min={200}
           step={100}
           showValue={true}
@@ -432,7 +432,7 @@ const Content: VFC<{ serverAPI: ServerAPI }> = ({}) => {
         {get_value(CLOCK_MAX_GPU) != null && <SliderField
           label="Maximum (MHz)"
           value={get_value(CLOCK_MAX_GPU)}
-          max={1600}
+          max={1800}
           min={200}
           step={100}
           showValue={true}
