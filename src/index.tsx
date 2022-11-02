@@ -241,7 +241,7 @@ const Content: VFC<{ serverAPI: ServerAPI }> = ({}) => {
           onChange={(value: boolean) => {
             if (value) {
               set_value(CLOCK_MIN_CPU, 1400);
-              set_value(CLOCK_MAX_CPU, 3500);
+              set_value(CLOCK_MAX_CPU, 3800);
               reloadGUI("CPUFreqToggle");
             } else {
               set_value(CLOCK_MIN_CPU, null);
@@ -260,7 +260,7 @@ const Content: VFC<{ serverAPI: ServerAPI }> = ({}) => {
         {get_value(CLOCK_MIN_CPU) != null && <SliderField
           label="Minimum (MHz)"
           value={get_value(CLOCK_MIN_CPU)}
-          max={3500}
+          max={3800}
           min={1400}
           step={100}
           showValue={true}
@@ -289,7 +289,7 @@ const Content: VFC<{ serverAPI: ServerAPI }> = ({}) => {
         {get_value(CLOCK_MAX_CPU) != null && <SliderField
           label="Maximum (MHz)"
           value={get_value(CLOCK_MAX_CPU)}
-          max={3500}
+          max={3800}
           min={500}
           step={100}
           showValue={true}
